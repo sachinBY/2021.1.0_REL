@@ -1,0 +1,43 @@
+bydm:
+  aggregator:
+    objectstore:
+      maxentries: 10000
+      entryttl: 3
+      entryttlunit: "HOURS"
+      expirationinterval: 3
+      expirationintervalunit: "HOURS"
+  dmdunit:
+    aggregator:
+      enabled: false
+      size: 100
+      timeout: 20
+  bom:
+    aggregator:
+      enabled: false
+      size: 3
+      timeout: 20
+  cal:
+    aggregator:
+      enabled: false
+      size: 3
+      timeout: 20
+  cust:
+    aggregator:
+      enabled: false
+      size: 3
+      timeout: 20           
+  custorder:
+    aggregator:
+      enabled: false
+      size: 100
+      timeout: 20
+  dmdgroup:
+    aggregator:
+      enabled: false
+      size: 3
+      timeout: 20    
+  dyndepsrc:
+    aggregator:
+      enabled: false
+      size: 100
+      timeout: 20    
