@@ -283,7 +283,7 @@ productionmethod:
     disabled: "false"
 network:
   bulkUpdate:
-    disabled: "false"
+    disabled: "true"
 cal:
   bulkUpdate:
     disabled: "false"
