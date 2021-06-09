@@ -268,7 +268,7 @@ vehicleloadline:
     disabled: "false"
 planpurch:
   bulkUpdate:
-    disabled: "false"
+    disabled: "true"
 custorder:
   bulkUpdate:
     disabled: "false"
