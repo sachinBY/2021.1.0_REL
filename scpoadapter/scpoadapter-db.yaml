@@ -32,7 +32,7 @@ scpo:
         stmtCacheSize: "10"
     truncateTable:
       inventory: "false"
-      planpurch: "true"
+      planpurch: "false"
       bom: "false"
       altbom: "false"
       vehicleload: "false"
