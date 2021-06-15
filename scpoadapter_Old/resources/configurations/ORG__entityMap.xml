@@ -644,7 +644,7 @@
     	</table> -->
     </entity-map>
     <entity-map scpoEntityName="resource" bi-directional="true" fail-on-missing-code="true">
-    	<!-- <table name="res">
+    	<!-- <table name="resource">
     		<column hostColumnName="creationDateTime" scpoColumnName="udc1" dataType="datetime"/>
     		<column hostColumnName="resourceIdentification/entityIdentification" scpoColumnName="udc2"/>
     		<column hostColumnName="sap1" scpoColumnName="udc5" dataType="date"/>

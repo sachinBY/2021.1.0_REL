@@ -170,6 +170,8 @@
 		<code key="800" value="80" />
 		<code key="100" value="10" />
 		<code key="700" value="70" />
+		<code key="3001" value="70" />
+		
 	</code-map>
 	<code-map name="calendartypeCodeToSCPOTypeConversion" bi-directional="true">
 		<code key="ALLOCATION" value="7" />

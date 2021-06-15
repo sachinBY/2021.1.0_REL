@@ -18,6 +18,19 @@
 
 <entity-map-configuration>
  <entity-map scpoEntityName="dyndepsrc">
+		<table name="dyndepsrc">
+    	 	<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table> 
+    	
+    <table name="UDT_DYNDEPSRC" isUDT="true">
+    		<column hostColumnName="UDT_STR1" scpoColumnName="UDT_ATTRIBUTE_STR1"  isPK="true"/>
+    		<column hostColumnName="UDT_NUM1" scpoColumnName="UDT_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDT_DTE1" scpoColumnName="UDT_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDT_FLT1" scpoColumnName="UDT_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
     <!--	<table name="dyndepsrc">
     	 	<column hostColumnName="creationDateTime" scpoColumnName="udc1" dataType="datetime"/>
     		<column hostColumnName="demandChannelIdentification/entityIdentification" scpoColumnName="udc2"/> 
@@ -33,6 +46,35 @@
     	</table> -->
     </entity-map>
 <entity-map scpoEntityName="billofmaterial" bi-directional="true">
+		<table name="bom">
+    		<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+		</table>
+		<table name="UDT_BOM" isUDT="true">
+    		<column hostColumnName="UDT_STR1" scpoColumnName="UDT_ATTRIBUTE_STR1"  isPK="true"/>
+    		<column hostColumnName="UDT_NUM1" scpoColumnName="UDT_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDT_DTE1" scpoColumnName="UDT_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDT_FLT1" scpoColumnName="UDT_ATTRIBUTE_FLT1" dataType="float"/>
+			
+			
+    	</table> 
+		<table name="altbom">
+    		<column hostColumnName="UDC_STR2" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM2" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE2" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT2" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+			
+		</table>
+		<table name="udt_altbom" isUDT="true">
+    		<column hostColumnName="UDT_STR2" scpoColumnName="UDT_ATTRIBUTE_STR1"  isPK="true"/>
+    		<column hostColumnName="UDT_NUM2" scpoColumnName="UDT_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDT_DTE2" scpoColumnName="UDT_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDT_FLT2" scpoColumnName="UDT_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table> 		
+
+	
     	<!-- <table name="bom">
     		<column hostColumnName="creationDateTime" scpoColumnName="udc1" dataType="datetime"/>
     		<column hostColumnName="billOfMaterialIdentification/entityIdentification" scpoColumnName="udc2"/>
@@ -71,6 +113,34 @@
     	</table> -->
     </entity-map>
     <entity-map scpoEntityName="cal" bi-directional="true">
+		<table name="cal">
+    		<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
+    	<table name="calpattern">
+    		<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
+    	<table name="calattribute">
+    		<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
+    	<table name="UDT_CAL" isUDT="true">
+    		<column hostColumnName="UDT_STR1" scpoColumnName="UDT_ATTRIBUTE_STR1"  isPK="true"/>
+    		<column hostColumnName="UDT_NUM1" scpoColumnName="UDT_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDT_DTE1" scpoColumnName="UDT_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDT_FLT1" scpoColumnName="UDT_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table> 
+	
+	
+	
+	
     	<!-- <table name="cal">
     		<column hostColumnName="description" scpoColumnName="udc1"/>
     		<column hostColumnName="calendarStartDate" scpoColumnName="udc2" dataType="date"/>
@@ -111,6 +181,19 @@
     	</table> -->
     </entity-map>
     <entity-map scpoEntityName="cust" bi-directional="true">
+	
+		<table name="cust">	
+			<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+			</table>
+			<table name="UDT_CUST" isUDT="true">
+    		<column hostColumnName="UDT_STR1" scpoColumnName="UDT_ATTRIBUTE_STR1"  isPK="true"/>
+    		<column hostColumnName="UDT_NUM1" scpoColumnName="UDT_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDT_DTE1" scpoColumnName="UDT_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDT_FLT1" scpoColumnName="UDT_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
     	<!-- <table name="cust">
     		<column hostColumnName="basicParty/partyName" scpoColumnName="udc1"/>
     		<column hostColumnName="basicParty/partyAddress/city" scpoColumnName="udc2"/>
@@ -132,6 +215,24 @@
     	</table>
     </entity-map>
     <entity-map scpoEntityName="relation">
+	    <table name="dfumaintcopydfu">
+    		<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	    </table> 
+	    <table name="supersession">
+    		<column hostColumnName="UDC_STR2" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM2" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE2" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT2" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table> 
+        <table name="UDT_RELATION" isUDT="true">
+    		<column hostColumnName="UDT_STR1" scpoColumnName="UDT_ATTRIBUTE_STR1"  isPK="true"/>
+    		<column hostColumnName="UDT_NUM1" scpoColumnName="UDT_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDT_DTE1" scpoColumnName="UDT_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDT_FLT1" scpoColumnName="UDT_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
     	<!-- <table name="dfumaintcopydfu">
     		<column hostColumnName="creationDateTime" scpoColumnName="udc1" dataType="datetime"/>
     		<column hostColumnName="demandChannelIdentification/entityIdentification" scpoColumnName="udc2"/>
@@ -153,6 +254,33 @@
     	</table> -->
     </entity-map>
     <entity-map scpoEntityName="custorder" bi-directional="true">
+		
+		<table name="custorder">
+			<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
+    	<table name="custorderheader">
+    		<column hostColumnName="UDC_STR2" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM2" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE2" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT2" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
+    	<table name="UDT_CUSTORDER" isUDT="true">
+    		<column hostColumnName="UDT_STR1" scpoColumnName="UDT_ATTRIBUTE_STR1"  isPK="true"/>
+    		<column hostColumnName="UDT_NUM1" scpoColumnName="UDT_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDT_DTE1" scpoColumnName="UDT_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDT_FLT1" scpoColumnName="UDT_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
+		<table name="UDT_CUSTORDERHEADER" isUDT="true">
+    		<column hostColumnName="UDT_STR2" scpoColumnName="UDT_ATTRIBUTE_STR1"  isPK="true"/>
+			<column hostColumnName="UDT_NUM2" scpoColumnName="UDT_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDT_DTE2" scpoColumnName="UDT_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDT_FLT2" scpoColumnName="UDT_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
+		
+		
     	<!-- <table name="custorder">
     		<column hostColumnName="creationDateTime" scpoColumnName="udc1" dataType="datetime"/>
     		<column hostColumnName="orderIdentification/entityIdentification" scpoColumnName="udc2"/>
@@ -201,6 +329,20 @@
     	</table> -->
     </entity-map>
     <entity-map scpoEntityName="dmdgroup" bi-directional="true">
+		<table name="dmdgroup">
+    		<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+		</table>
+		<table name="UDT_DMDGROUP" isUDT="true">
+    		<column hostColumnName="UDT_STR1" scpoColumnName="UDT_ATTRIBUTE_STR1"  isPK="true"/>
+    		<column hostColumnName="UDT_NUM1" scpoColumnName="UDT_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDT_DTE1" scpoColumnName="UDT_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDT_FLT1" scpoColumnName="UDT_ATTRIBUTE_FLT1" dataType="float"/>		
+			
+    	</table>
+	
     	<!-- <table name="dmdgroup">
     		<column hostColumnName="creationDateTime" scpoColumnName="udc1" dataType="datetime"/>
     		<column hostColumnName="demandChannelIdentification/entityIdentification" scpoColumnName="udc2"/>
@@ -215,6 +357,19 @@
     	</table> -->
     </entity-map>
     <entity-map scpoEntityName="dmdunit" bi-directional="true">
+		<table name="dmdunit">
+    		<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+		</table>
+		<table name="UDT_DMDUNIT" isUDT="true">
+    		<column hostColumnName="UDT_STR1" scpoColumnName="UDT_ATTRIBUTE_STR1"  isPK="true"/>
+    		<column hostColumnName="UDT_NUM1" scpoColumnName="UDT_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDT_DTE1" scpoColumnName="UDT_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDT_FLT1" scpoColumnName="UDT_ATTRIBUTE_FLT1" dataType="float"/>		
+			
+    	</table>
     	<!-- <table name="dmdunit">
     		<column hostColumnName="creationDateTime" scpoColumnName="udc1" dataType="datetime"/>
     		<column hostColumnName="demandUnitIdentification/entityIdentification" scpoColumnName="udc2"/>
@@ -299,6 +454,19 @@
     	</table> -->
     </entity-map>
     <entity-map scpoEntityName="itemhierarchylevelmember" bi-directional="true">
+		<table name="dmdunit">
+    		<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
+    	<table name="UDT_DMDUNIT" isUDT="true">
+    		<column hostColumnName="UDT_STR1" scpoColumnName="UDT_ATTRIBUTE_STR1"  isPK="true"/>
+    		<column hostColumnName="UDT_NUM1" scpoColumnName="UDT_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDT_DTE1" scpoColumnName="UDT_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDT_FLT1" scpoColumnName="UDT_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
+	
     	<!-- <table name="dmdunit">
     		<column hostColumnName="creationDateTime" scpoColumnName="udc1" dataType="datetime"/>
     		<column hostColumnName="demandUnitIdentification/entityIdentification" scpoColumnName="udc2"/>
@@ -317,6 +485,31 @@
     	</table> -->
     </entity-map>
     <entity-map scpoEntityName="dfuview" bi-directional="true">
+	
+		<table name="dfuview">
+    		<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
+		<table name="dfutosku">
+			<column hostColumnName="UDC_STR2" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM2" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE2" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT2" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
+    	<table name="UDT_DFUVIEW" isUDT="true">
+    		<column hostColumnName="UDT_STR1" scpoColumnName="UDT_ATTRIBUTE_STR1"  isPK="true"/>
+    		<column hostColumnName="UDT_NUM1" scpoColumnName="UDT_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDT_DTE1" scpoColumnName="UDT_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDT_FLT1" scpoColumnName="UDT_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table> 
+		<table name="UDT_DFUTOSKU" isUDT="true">
+    		<column hostColumnName="UDT_STR2" scpoColumnName="UDT_ATTRIBUTE_STR1"  isPK="true"/>
+    		<column hostColumnName="UDT_NUM2" scpoColumnName="UDT_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDT_DTE2" scpoColumnName="UDT_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDT_FLT2" scpoColumnName="UDT_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
     	<!-- <table name="dfuview">
     		<column hostColumnName="creationDateTime" scpoColumnName="udc1" dataType="datetime"/>
     		<column hostColumnName="demandForecastUnitIdentification/demandUnit" scpoColumnName="udc2"/>
@@ -363,6 +556,20 @@
     	</table> -->
     </entity-map>
     <entity-map scpoEntityName="item" bi-directional="true">
+		<table name="item">
+    		<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+			<column hostColumnName="item/description/UDC_STR2" scpoColumnName="UDC_ATTRIBUTE_STR2"/>
+    	</table>
+		<table name="UDT_ITEM" isUDT="true">
+    		<column hostColumnName="UDT_STR1" scpoColumnName="UDT_ATTRIBUTE_STR1"  isPK="true"/>
+    		<column hostColumnName="UDT_NUM1" scpoColumnName="UDT_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDT_DTE1" scpoColumnName="UDT_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDT_FLT1" scpoColumnName="UDT_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>  
+	
     	<!-- <table name="item">
     		<column hostColumnName="description" scpoColumnName="udc1"/>
     		<column hostColumnName="tradeDate" scpoColumnName="udc2" dataType="date"/>
@@ -387,6 +594,18 @@
     </entity-map>
     
     <entity-map scpoEntityName="skuhistfcst" bi-directional="true">
+		<table name="skuhistfcst">
+    		<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
+    	<table name="UDT_skuhistfcst" isUDT="true">
+    		<column hostColumnName="UDT_STR1" scpoColumnName="UDT_ATTRIBUTE_STR1"  isPK="true"/>
+    		<column hostColumnName="UDT_NUM1" scpoColumnName="UDT_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDT_DTE1" scpoColumnName="UDT_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDT_FLT1" scpoColumnName="UDT_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
     	<!-- <table name="skuhistfcst">
     		<column hostColumnName="sap1" scpoColumnName="UDC1"/>
     		<column hostColumnName="sap2" scpoColumnName="UDC2"/>
@@ -398,6 +617,19 @@
     </entity-map>
     
     <entity-map scpoEntityName="loc" bi-directional="true">
+			<table name="loc">
+    		<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+			</table>
+			<table name="UDT_LOC" isUDT="true">
+    		<column hostColumnName="UDT_STR1" scpoColumnName="UDT_ATTRIBUTE_STR1"  isPK="true"/>
+    		<column hostColumnName="UDT_NUM1" scpoColumnName="UDT_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDT_DTE1" scpoColumnName="UDT_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDT_FLT1" scpoColumnName="UDT_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table> 
+		
     	<!-- <table name="loc">
     		<column hostColumnName="creationDateTime" scpoColumnName="udc1" dataType="datetime"/>
     		<column hostColumnName="locationIdentification/entityIdentification" scpoColumnName="udc2"/>
@@ -416,6 +648,31 @@
     	</table> -->
     </entity-map>
     <entity-map scpoEntityName="movingevent" bi-directional="true">
+	 <table name="movingevent">
+    		<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
+    	<table name="movingeventdata">
+    		<column hostColumnName="UDC_STR2" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM2" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE2" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT2" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
+    	<table name="dfumovingeventmap">
+    		<column hostColumnName="UDC_STR3" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM3" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE3" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT3" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
+    	<table name="UDT_MOVINGEVENT" isUDT="true">
+    		<column hostColumnName="UDT_STR1" scpoColumnName="UDT_ATTRIBUTE_STR1"  isPK="true"/>
+    		<column hostColumnName="UDT_NUM1" scpoColumnName="UDT_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDT_DTE1" scpoColumnName="UDT_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDT_FLT1" scpoColumnName="UDT_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>   
+	    
     	<!-- <table name="movingevent">
     		<column hostColumnName="creationDateTime" scpoColumnName="udc1" dataType="datetime"/>
     		<column hostColumnName="eventGroupIdentification/entityIdentification" scpoColumnName="udc2"/>
@@ -502,6 +759,24 @@
     	</table> -->
     </entity-map>
     <entity-map scpoEntityName="prepacksupply" bi-directional="true" fail-on-missing-code="true">
+	    <table name="allocsupplyprepack">
+    		<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
+    	<table name="allocsupplyprepackdetails">
+    		<column hostColumnName="UDC_STR2" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM2" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE2" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT2" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
+    	<table name="UDT_PREPACKSUPPLYPACK" isUDT="true">
+    		<column hostColumnName="UDT_STR1" scpoColumnName="UDT_ATTRIBUTE_STR1"  isPK="true"/>
+    		<column hostColumnName="UDT_NUM1" scpoColumnName="UDT_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDT_DTE1" scpoColumnName="UDT_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDT_FLT1" scpoColumnName="UDT_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
     	<!-- <table name="allocsupplyprepack">
     		<column hostColumnName="creationDateTime" scpoColumnName="udc1" dataType="datetime"/>
     		<column hostColumnName="prepackSupplyIdentification/entityIdentification" scpoColumnName="udc2"/>
@@ -546,6 +821,18 @@
     	</table> -->
     </entity-map>
     <entity-map scpoEntityName="firmplanpurch" bi-directional="true" fail-on-missing-code="true">
+	 <table name="planpurch">
+    		<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
+    	<table name="UDT_PLANPURCH" isUDT="true">
+    		<column hostColumnName="UDT_STR1" scpoColumnName="UDT_ATTRIBUTE_STR1"  isPK="true"/>
+    		<column hostColumnName="UDT_NUM1" scpoColumnName="UDT_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDT_DTE1" scpoColumnName="UDT_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDT_FLT1" scpoColumnName="UDT_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>   
     	<!-- <table name="planpurch">
     		<column hostColumnName="creationDateTime" scpoColumnName="udc1" dataType="datetime"/>
     		<column hostColumnName="plannedSupplyIdentification/item/additionalTradeItemIdentification" scpoColumnName="udc2"/>
@@ -564,6 +851,31 @@
     	</table> -->
     </entity-map>
     <entity-map scpoEntityName="productionrouting" bi-directional="true" fail-on-missing-code="true">
+	    <table name="productionmethod">
+    		<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
+    	<table name="productionstep">
+    		<column hostColumnName="UDC_STR2" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM2" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE2" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT2" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table> 
+    	<table name="altproductionstep">
+    		<column hostColumnName="UDC_STR3" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM3" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE3" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT3" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
+    	<table name="UDT_PROCUDTIONROUTING" isUDT="true">
+    		<column hostColumnName="UDT_STR1" scpoColumnName="UDT_ATTRIBUTE_STR1"  isPK="true"/>
+    		<column hostColumnName="UDT_NUM1" scpoColumnName="UDT_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDT_DTE1" scpoColumnName="UDT_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDT_FLT1" scpoColumnName="UDT_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
+	    
     	<!-- <table name="productionmethod">
     		<column hostColumnName="creationDateTime" scpoColumnName="udc1" dataType="datetime"/>
     		<column hostColumnName="productionRoutingIdentifier/entityIdentification" scpoColumnName="udc2"/>
@@ -598,6 +910,24 @@
     	</table> -->
     </entity-map>
     <entity-map scpoEntityName="promotion" bi-directional="true" fail-on-missing-code="true">
+	     <table name="ddeprofile">
+    		<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
+    	<table name="dfuddemap">
+    		<column hostColumnName="UDC_STR2" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM2" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE2" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT2" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
+    	<table name="UDT_PROMOTION" isUDT="true">
+    		<column hostColumnName="UDT_STR1" scpoColumnName="UDT_ATTRIBUTE_STR1"  isPK="true"/>
+    		<column hostColumnName="UDT_NUM1" scpoColumnName="UDT_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDT_DTE1" scpoColumnName="UDT_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDT_FLT1" scpoColumnName="UDT_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
     	<!-- <table name="ddeprofile">
     		<column hostColumnName="creationDateTime" scpoColumnName="udc1" dataType="datetime"/>
     		<column hostColumnName="promotionIdentification/entityIdentification" scpoColumnName="udc2"/>
@@ -624,6 +954,19 @@
     	</table> -->
     </entity-map>
     <entity-map scpoEntityName="purchmethod" bi-directional="true" fail-on-missing-code="true">
+	    <table name="purchmethod">
+    		<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
+    	<table name="UDT_PURCHMETHOD" isUDT="true">
+    		<column hostColumnName="UDT_STR1" scpoColumnName="UDT_ATTRIBUTE_STR1"  isPK="true"/>
+    		<column hostColumnName="UDT_NUM1" scpoColumnName="UDT_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDT_DTE1" scpoColumnName="UDT_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDT_FLT1" scpoColumnName="UDT_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
+	    
     	<!-- <table name="purchmethod">
     		<column hostColumnName="creationDateTime" scpoColumnName="udc1" dataType="datetime"/>
     		<column hostColumnName="purchaseMethodIdentifier/item/additionalTradeItemIdentification" scpoColumnName="udc2"/>
@@ -644,7 +987,64 @@
     	</table> -->
     </entity-map>
     <entity-map scpoEntityName="resource" bi-directional="true" fail-on-missing-code="true">
-    	<!-- <table name="res">
+		<table name="res">
+    		<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+		</table>
+		<table name="UDT_RES" isUDT="true">
+    		<column hostColumnName="UDT_STR1" scpoColumnName="UDT_ATTRIBUTE_STR1"  isPK="true"/>
+    		<column hostColumnName="UDT_NUM1" scpoColumnName="UDT_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDT_DTE1" scpoColumnName="UDT_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDT_FLT1" scpoColumnName="UDT_ATTRIBUTE_FLT1" dataType="float"/>
+		</table>
+
+		<table name="cal">
+    		<column hostColumnName="UDC_STR2" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM2" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE2" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT3" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+		</table>
+		<table name="UDT_CAL" isUDT="true">
+    		<column hostColumnName="UDT_STR2" scpoColumnName="UDT_ATTRIBUTE_STR1"  isPK="true"/>
+    		<column hostColumnName="UDT_NUM2" scpoColumnName="UDT_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDT_DTE2" scpoColumnName="UDT_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDT_FLT2" scpoColumnName="UDT_ATTRIBUTE_FLT1" dataType="float"/>
+		</table>
+		
+		<table name="calpattern">
+    		<column hostColumnName="UDC_STR3" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM3" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE3" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT3" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+		</table>
+		<table name="UDT_CALPATTERN" isUDT="true">
+    		<column hostColumnName="UDT_STR3" scpoColumnName="UDT_ATTRIBUTE_STR1"  isPK="true"/>
+    		<column hostColumnName="UDT_NUM3" scpoColumnName="UDT_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDT_DTE3" scpoColumnName="UDT_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDT_FLT3" scpoColumnName="UDT_ATTRIBUTE_FLT1" dataType="float"/>
+		</table>
+		
+		<table name="calattribute">
+    		<column hostColumnName="UDC_STR4" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM4" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE4" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT4" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+		</table>
+		<table name="UDT_CALATTRIBUTE" isUDT="true">
+    		<column hostColumnName="UDT_STR4" scpoColumnName="UDT_ATTRIBUTE_STR1"  isPK="true"/>
+    		<column hostColumnName="UDT_NUM4" scpoColumnName="UDT_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDT_DTE4" scpoColumnName="UDT_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDT_FLT4" scpoColumnName="UDT_ATTRIBUTE_FLT1" dataType="float"/>
+		</table>
+
+
+		
+	
+	
+	
+    	<!-- <table name="resource">
     		<column hostColumnName="creationDateTime" scpoColumnName="udc1" dataType="datetime"/>
     		<column hostColumnName="resourceIdentification/entityIdentification" scpoColumnName="udc2"/>
     		<column hostColumnName="sap1" scpoColumnName="udc5" dataType="date"/>
@@ -733,6 +1133,20 @@
     	</table> -->
     </entity-map>
     <entity-map scpoEntityName="sku" bi-directional="true">
+			<table name="sku">
+			<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+			
+			</table>
+			
+			<table name="UDT_SKU" isUDT="true">
+    		<column hostColumnName="UDT_STR1" scpoColumnName="UDT_ATTRIBUTE_STR1"  isPK="true"/>
+    		<column hostColumnName="UDT_NUM1" scpoColumnName="UDT_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDT_DTE1" scpoColumnName="UDT_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDT_FLT1" scpoColumnName="UDT_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table> 
     	<!-- <table name="sku">
     		<column hostColumnName="sap1" scpoColumnName="udc5" dataType="date"/>
     		<column hostColumnName="sap2" scpoColumnName="udc6"/>
@@ -954,6 +1368,12 @@
     	</table>
    </entity-map>  -->	
     <entity-map scpoEntityName="planpurch" bi-directional="true">
+		<table name="planpurch" isOutBound="true">
+    		<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
     	<!-- <table name="planpurch" isOutBound="true">
     		<column hostColumnName="action" scpoColumnName="action" dataType="integer"/>
     		<column hostColumnName="actiondate" scpoColumnName="actiondate" dataType="date"/>
@@ -961,6 +1381,12 @@
     	</table> -->
     </entity-map>
     <entity-map scpoEntityName="planorder" bi-directional="true">
+		<table name="planorder" isOutBound="true">
+    		<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
     	<!-- <table name="planorder" isOutBound="true">
     		<column hostColumnName="udc1" scpoColumnName="udc1"/>
     		<column hostColumnName="udc2" scpoColumnName="udc2"/>
@@ -969,6 +1395,12 @@
     	</table> -->
     </entity-map>
     <entity-map scpoEntityName="planarriv" bi-directional="true">
+		<table name="planarriv" isOutBound="true">
+    		<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
     	<!-- <table name="planarriv">
     		<column hostColumnName="udc1" scpoColumnName="udc1"/>
     		<column hostColumnName="udc2" scpoColumnName="udc2"/>
@@ -1059,6 +1491,20 @@
     		<column hostColumnName="sap4" scpoColumnName="udc9"/>
     	</table>  -->
     </entity-map>
+    <entity-map scpoEntityName="itemlocdmdgroupmap" bi-directional="true">
+      	<table name="itemlocdmdgroupmap">
+    		<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
+    	<table name="UDT_ITEMLOCDMDGROUPMAP" isUDT="true">
+    		<column hostColumnName="UDT_STR1" scpoColumnName="UDT_ATTRIBUTE_STR1"  isPK="true"/>
+    		<column hostColumnName="UDT_NUM1" scpoColumnName="UDT_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDT_DTE1" scpoColumnName="UDT_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDT_FLT1" scpoColumnName="UDT_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>  
+    </entity-map>
      <!-- <entity-map scpoEntityName="itemlocdmdgroupmap" bi-directional="true">
       	<table name="itemlocdmdgroupmap">
     		<column hostColumnName="sap1" scpoColumnName="udc5" dataType="date"/> 
@@ -1116,20 +1562,4 @@
     		<column hostColumnName="sap2" scpoColumnName="udc6"/>
     	</table> -->
     </entity-map>
-    <entity-map scpoEntityName="orderskudetail" bi-directional="true">
-    	<!--<table name="orderskudetail" isOutBound="true">
-    		<column hostColumnName="UDC1" scpoColumnName="UDC_EXP1"/>
-    		 <column hostColumnName="sap2" scpoColumnName="udc6"/>
-    		<column hostColumnName="sap4" scpoColumnName="udc7"/> 
-    	</table>-->
-    </entity-map>	
-        <entity-map scpoEntityName="skustatstatic" bi-directional="true">
-    	<!-- <table name="skustatstatic" isUDT="true">
-    		<column hostColumnName="basicParty/partyName" scpoColumnName="udc1"/>
-    		<column hostColumnName="basicParty/partyAddress/city" scpoColumnName="udc2"/>
-    		<column hostColumnName="sap1" scpoColumnName="udc5"/>
-    		<column hostColumnName="sap2" scpoColumnName="udc6"/>
-    	</table> -->
-    </entity-map>
-    
 </entity-map-configuration>
