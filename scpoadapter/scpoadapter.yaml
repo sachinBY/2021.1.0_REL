@@ -106,7 +106,7 @@ bydm:
   automatic:
     uomconversion: "false"
   dmdunit:
-    ancestry:
+    hierarchies:
       tables: "CAT,SUBCAT"
     process:
       ancestry: "false"    
