@@ -153,13 +153,9 @@ bydm:
       message: "bydm"
   skustatstatic:
     out:
-      message: "BYDM"
-  hist:
-    aggregation:
-      enabled: "false"          
+      message: "BYDM"      
   inventory:
     aggregation:
-      enabled: "false"
       categories: "AVAILABLE_FOR_SALE"    
   customize:
     billofmaterial: "false"
