@@ -150,7 +150,8 @@ bydm:
       message: "BYDM"
   ordersku:
     out:
-      message: "bydm"
+      #message: "bydm"
+      message: "csv"
   skustatstatic:
     out:
       message: "BYDM"
