@@ -1394,14 +1394,20 @@
     		<column hostColumnName="udc4" scpoColumnName="udc4" dataType="float"/>
     	</table> -->
     </entity-map>
-   <!--  <entity-map scpoEntityName="skuexternalfcst" bi-directional="true">
-    	  <table name="UDT_SKUEXTERNALFCST" isUDT="true">
+     <entity-map scpoEntityName="skuexternalfcst" bi-directional="true">
+    	  <!--<table name="UDT_SKUEXTERNALFCST" isUDT="true">
     		<column hostColumnName="udc1" scpoColumnName="udc1"/>
     		<column hostColumnName="udc2" scpoColumnName="udc2"/>
     		<column hostColumnName="udc3" scpoColumnName="udc3" dataType="date"/>
     		<column hostColumnName="udc4" scpoColumnName="udc4" dataType="float"/>
-    	</table>
-   </entity-map>  -->	
+    	</table> -->
+	       <table name="UDT_SKUEXTERNALFCST" isUDT="true">
+		<column hostColumnName="UDT_STR2" scpoColumnName="UDT_ATTRIBUTE_STR1"  isPK="true"/>
+    		<column hostColumnName="UDT_NUM2" scpoColumnName="UDT_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDT_DTE2" scpoColumnName="UDT_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDT_FLT2" scpoColumnName="UDT_ATTRIBUTE_FLT1" dataType="float"/>
+    	   </table> 
+   </entity-map>  
     <entity-map scpoEntityName="planpurch" bi-directional="true">
 		<table name="planpurch" isOutBound="true">
     		<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
