@@ -112,7 +112,8 @@ bydm:
       ancestry: "false"    
   fcst:
     in:
-      table: "skuexternalfcst"    
+      #table: "skuexternalfcst" 
+      table: "fcst"  
     message: "forecast2Message"
     messageType: "forecast2"
     out:
