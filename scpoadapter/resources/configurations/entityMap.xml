@@ -1261,7 +1261,7 @@
     		<column hostColumnName="UDC3" scpoColumnName="UDC_EXP3"/> 
     	</table> -->
     </entity-map>
-	<!-- <entity-map scpoEntityName="orderskudetail" bi-directional="true">
+	 <entity-map scpoEntityName="orderskudetail" bi-directional="true">
 	     <table name="orderskudetail" isOutBound="true">
 		<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
     		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
@@ -1269,7 +1269,7 @@
     		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
 	     </table>
     	
-    </entity-map> -->
+    </entity-map>
 	
     <entity-map scpoEntityName="sku" bi-directional="true">
 	<table name="sku">
