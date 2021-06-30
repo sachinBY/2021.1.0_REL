@@ -1233,6 +1233,14 @@
     	</table> -->
     </entity-map>
     <entity-map scpoEntityName="projorderskudetail" bi-directional="true">
+	    
+	    table name="projorderskudetail" isOutBound="true">
+    		<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
+	
     	<!--<table name="projorderskudetail" isOutBound="true">
     		<column hostColumnName="UDC1" scpoColumnName="UDC_EXP1"/>
     		 <column hostColumnName="sap2" scpoColumnName="udc6"/>
