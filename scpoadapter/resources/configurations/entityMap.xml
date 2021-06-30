@@ -1173,6 +1173,25 @@
     	</table> -->
     </entity-map>
     <entity-map scpoEntityName="schedrcpts" bi-directional="true" fail-on-missing-code="true">
+	 <table name="schedrcpts">
+    		<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
+    	<table name="schedrcptsdetail">
+    		<column hostColumnName="UDC_STR2" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM2" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE2" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT2" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
+    	<table name="UDT_SCHEDRCPTS" isUDT="true">
+    		<column hostColumnName="UDT_STR1" scpoColumnName="UDT_ATTRIBUTE_STR1"  isPK="true"/>
+    		<column hostColumnName="UDT_NUM1" scpoColumnName="UDT_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDT_DTE1" scpoColumnName="UDT_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDT_FLT1" scpoColumnName="UDT_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
+	    
     	<!-- <table name="schedrcpts">
     		<column hostColumnName="creationDateTime" scpoColumnName="udc1" dataType="datetime"/>
     		<column hostColumnName="scheduledReceiptIdentification/item/additionalTradeItemIdentification" scpoColumnName="udc2"/>
@@ -1227,15 +1246,15 @@
     </entity-map> -->
 	
     <entity-map scpoEntityName="sku" bi-directional="true">
-			<table name="sku">
+	<table name="sku">
 			<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
     		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
     		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
     		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
 			
-			</table>
+	</table>
 			
-			<table name="UDT_SKU" isUDT="true">
+	 <table name="UDT_SKU" isUDT="true">
     		<column hostColumnName="UDT_STR1" scpoColumnName="UDT_ATTRIBUTE_STR1"  isPK="true"/>
     		<column hostColumnName="UDT_NUM1" scpoColumnName="UDT_ATTRIBUTE_NUM1" dataType="number"/>
     		<column hostColumnName="UDT_DTE1" scpoColumnName="UDT_ATTRIBUTE_DTE1" dataType="date"/>
