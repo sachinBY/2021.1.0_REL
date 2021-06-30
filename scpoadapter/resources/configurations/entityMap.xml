@@ -465,7 +465,7 @@
     		<column hostColumnName="UDT_NUM1" scpoColumnName="UDT_ATTRIBUTE_NUM1" dataType="number"/>
     		<column hostColumnName="UDT_DTE1" scpoColumnName="UDT_ATTRIBUTE_DTE1" dataType="date"/>
     		<column hostColumnName="UDT_FLT1" scpoColumnName="UDT_ATTRIBUTE_FLT1" dataType="float"/>
-    	</table
+	    </table>
     	<!-- <table name="inventory">
     		<column hostColumnName="itemIdentifier" scpoColumnName="udc1"/>
     		<column hostColumnName="locationIdentifier" scpoColumnName="udc2"/>
