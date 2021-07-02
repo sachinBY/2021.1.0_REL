@@ -2,7 +2,7 @@ bulk:
   content:
     type: "JSON"
   notification:
-    enabled: "true"
+    enabled: "false"
     identifier: "BYDM 2021.3.0"
   serviceName: "SCPO-GLOBAL"
   serviceType: "SCPO"
