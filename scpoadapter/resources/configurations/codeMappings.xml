@@ -140,6 +140,7 @@
 		<code key="AREA" value="50" />
 		<code key="LAYER CATEGORY" value="2004" />
 		<code key="PACK CATEGORY" value="2003" />
+		<code key="VOLUME1" value="71" />
 	</code-map>
 	<code-map name="uomToCategoryTypeConversion" bi-directional="true">
 		<code key="20003" value="2003" />
