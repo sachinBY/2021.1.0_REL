@@ -144,6 +144,7 @@
 	</code-map>
 	<code-map name="uomToCategoryTypeConversion" bi-directional="true">
 		<code key="20003" value="2003" />
+		<code key="3001" value="10" />
 		<code key="20004" value="2004" />
 		<code key="0" value="-1" />
 		<code key="1" value="50" />
