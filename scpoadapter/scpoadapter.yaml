@@ -164,7 +164,7 @@ bydm:
       enabled: "true"          
   inventory:
     aggregation:
-      enabled: "true"
+      enabled: "false"
       categories: "AVAILABLE_FOR_SALE"    
   customize:
     billofmaterial: "false"
