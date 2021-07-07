@@ -82,24 +82,19 @@ bydm:
         identifier: BYDM 2021.3.0
       plannedsupply:
         identifier: BYDM 2021.2.0
-      skuprojstatic:
-        identifier: BYDM 2021.2.0    
+      skuprojstaticidentifier: BYDM 2021.2.0    
       identifier: BYDM 2020.3.0    
-      skuhist:
-        identifier: BYDM 2021.2.0
-      fcst:
-        identifier: BYDM 2021.2.0
-      orderlink:
-        identifier: BYDM 2021.2.0
-      sku:
-        identifier: BYDM 2021.2.0
+      skuhistidentifier: BYDM 2021.2.0
+      fcstidentifier: BYDM 2021.2.0
+      orderlinkidentifier: BYDM 2021.2.0
+      skuidentifier: BYDM 2021.2.0
       ordersku:
         identifier: BYDM 2021.3.0
       skustatstatic:
         identifier: BYDM 2021.4.0
 
   enable:
-    validation: "false"      
+    validation: "true"      
   message:
     size: "100"     
   network:
@@ -117,7 +112,8 @@ bydm:
       ancestry: "false"    
   fcst:
     in:
-      table: "skuexternalfcst"    
+      #table: "skuexternalfcst" 
+      table: "fcst"  
     message: "forecast2Message"
     messageType: "forecast2"
     out:
@@ -156,15 +152,16 @@ bydm:
   ordersku:
     out:
       message: "bydm"
+      #message: "csv"
   skustatstatic:
     out:
       message: "BYDM"
   hist:
     aggregation:
-      enabled: "true"          
+      enabled: "false"          
   inventory:
     aggregation:
-      enabled: "true"
+      enabled: "false"
       categories: "AVAILABLE_FOR_SALE"    
   customize:
     billofmaterial: "false"
