@@ -161,7 +161,7 @@ bydm:
       message: "BYDM"
   hist:
     aggregation:
-      enabled: "true"          
+      enabled: "false"          
   inventory:
     aggregation:
       enabled: "false"
