@@ -99,7 +99,7 @@ bydm:
         identifier: BYDM 2021.4.0
 
   enable:
-    validation: "false"      
+    validation: "true"      
   message:
     size: "100"     
   network:
