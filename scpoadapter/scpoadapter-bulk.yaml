@@ -15,7 +15,7 @@ bulk:
       location:
   read:
     batch:
-      size: "100"
+      #size: "100"
       size: "40000"
   persistent:
     store:
