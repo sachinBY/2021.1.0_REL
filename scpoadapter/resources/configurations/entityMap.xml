@@ -1863,4 +1863,16 @@
     		<column hostColumnName="sap2" scpoColumnName="udc6"/>
     	</table> -->
     </entity-map>
+        <entity-map scpoEntityName="projorderskutotal" bi-directional="true">
+	    
+	    <table name="projorderskutotal" isOutBound="true">
+    		<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
+	
+    
+    </entity-map>
+	
 </entity-map-configuration>
