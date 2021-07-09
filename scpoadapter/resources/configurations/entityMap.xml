@@ -1515,6 +1515,13 @@
 		<column hostColumnName="UDC_4" scpoColumnName="UDC_ATTRIBUTE_NUM2"/>
 		<column hostColumnName="UDC_5" scpoColumnName="UDC_ATTRIBUTE_NUM3"/>
     	</table>
+	    
+	    <table name="dfutoskufcst" isOutBound="true">
+    		<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
     	<!-- <table name="fcst">
     		<column hostColumnName="udc1" scpoColumnName="udc1"/>
     		<column hostColumnName="udc2" scpoColumnName="udc2"/>
