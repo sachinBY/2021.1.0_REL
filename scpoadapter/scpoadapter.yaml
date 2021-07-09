@@ -122,8 +122,8 @@ bydm:
     message: "forecast2Message"
     messageType: "forecast2"
     out:
-      #message: "BYDM"
-      message: "csv"
+      message: "BYDM"
+      #message: "csv"
   dfutoskufcst:
     preprocessing: "true"
     message: "forecast2Message"
