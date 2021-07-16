@@ -122,13 +122,14 @@ bydm:
     message: "forecast2Message"
     messageType: "forecast2"
     out:
-      message: "BYDM"
-      #message: "csv"
+      #message: "BYDM"
+      message: "csv"
   dfutoskufcst:
     preprocessing: "true"
     message: "forecast2Message"
     out:
-      message: "BYDM"    
+      #message: "BYDM"
+      message: "csv"
   skuhist:
     message: "demandHistoryMessage"
     out:
@@ -143,26 +144,33 @@ bydm:
       message: "csv"
   projordersummary:
     out:
-      message: "BYDM"    
+      #message: "BYDM"
+      message: "csv"
   projorderskudetail:
     currencyCode: "USD"
     out:
-      message: "BYDM"
+      #message: "BYDM"
+      message: "csv"
   projorderskutotal:
     out:
-      message: "BYDM"    
+      #message: "BYDM"
+      message: "csv"
   projordersku:
     out:
-      message: "BYDM"    
+      #message: "BYDM"
+      message: "csv"
   projordertotal:
     out:
-      message: "BYDM"
+      #message: "BYDM"
+      message: "csv"
   ordersku:
     out:
-      message: "bydm"
+      #message: "bydm"
+      message: "csv"
   skustatstatic:
     out:
-      message: "BYDM"
+      #message: "BYDM"
+      message: "csv"
   hist:
     aggregation:
       enabled: "false"          
