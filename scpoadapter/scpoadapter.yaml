@@ -135,10 +135,12 @@ bydm:
       message: "BYDM"
   projorderexception:
     out:
-      message: "BYDM"
+      #message: "BYDM"
+      message: "csv"
   projordersummarydetail:
     out:
-      message: "BYDM"
+      #message: "BYDM"
+      message: "csv"
   projordersummary:
     out:
       message: "BYDM"    
