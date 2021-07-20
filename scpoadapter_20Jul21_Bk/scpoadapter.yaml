@@ -99,9 +99,10 @@ bydm:
         identifier: BYDM 2021.4.0
 
   enable:
-    validation: "false"      
+    validation: "true"      
   message:
-    size: "100"     
+    #size: "100"
+    size: "40000"  
   network:
     default:
       transmode: " "
@@ -121,50 +122,65 @@ bydm:
     message: "forecast2Message"
     messageType: "forecast2"
     out:
-      message: "BYDM"    
+      #message: "BYDM"
+      message: "csv"
   dfutoskufcst:
     preprocessing: "true"
     message: "forecast2Message"
     out:
-      message: "BYDM"    
+      #message: "BYDM"
+      message: "csv"
   skuhist:
     message: "demandHistoryMessage"
     out:
       message: "BYDM"
   projorderexception:
     out:
-      message: "BYDM"
+      #message: "BYDM"
+      message: "csv"
   projordersummarydetail:
     out:
-      message: "BYDM"
+      #message: "BYDM"
+      message: "csv"
   projordersummary:
     out:
-      message: "BYDM"    
+      #message: "BYDM"
+      message: "csv"
   projorderskudetail:
     currencyCode: "USD"
     out:
-      message: "BYDM"
+      #message: "BYDM"
+      message: "csv"
   projorderskutotal:
     out:
-      message: "BYDM"    
+      #message: "BYDM"
+      message: "csv"
   projordersku:
     out:
-      message: "BYDM"    
+      #message: "BYDM"
+      message: "csv"
   projordertotal:
     out:
-      message: "BYDM"
+      #message: "BYDM"
+      message: "csv"
   ordersku:
     out:
-      message: "bydm"
+      #message: "bydm"
+      message: "csv"
   skustatstatic:
     out:
-      message: "BYDM"
+      #message: "BYDM"
+      message: "csv"
+  sku:
+    out:
+      #message: "BYDM"
+      message: "csv"
   hist:
     aggregation:
-      enabled: "true"          
+      enabled: "false"          
   inventory:
     aggregation:
-      enabled: "true"
+      enabled: "false"
       categories: "AVAILABLE_FOR_SALE"    
   customize:
     billofmaterial: "false"

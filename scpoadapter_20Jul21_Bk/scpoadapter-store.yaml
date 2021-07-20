@@ -4,9 +4,6 @@ scpo:
   serviceInstance: "SCPO-CLUSTER"
   serviceNamedVersion: "SCPO-2020.1.0"
   ms:
-    fail:
-      duplicate:
-        messages: "false"
     enabled: "true"
     server:
       requester:
@@ -20,7 +17,7 @@ scpo:
           connections: "2"
         connection:
           idle:
-            timeout: "1200000"
+            timeout: "60"
         response:
           buffer:
             size: "1024"

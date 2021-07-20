@@ -2,7 +2,7 @@ bulk:
   content:
     type: "JSON"
   notification:
-    enabled: "false"
+    enabled: "true"
     identifier: "BYDM 2021.3.0"
   serviceName: "SCPO-GLOBAL"
   serviceType: "SCPO"
@@ -15,13 +15,16 @@ bulk:
       location:
   read:
     batch:
-      size: "100"    
+      #size: "100"
+      size: "40000"
   persistent:
     store:
       host:
       #supported possible values are Azure Blob Store, Local File Store  
-      type: "Azure Blob Store"
-      path: 
+      #type: "Azure Blob Store"
+      #path:
+      type: "Local File Store"
+      path: "//MD1NPDVJCE01.dev.corp.local/Tools/u/SCPO"
   callback:
     # supported possible values are AzureBlob, FILE
     protocol: "FILE"
