@@ -161,10 +161,10 @@ bydm:
       message: "BYDM"
   hist:
     aggregation:
-      enabled: "true"          
+      enabled: "false"          
   inventory:
     aggregation:
-      enabled: "true"
+      enabled: "false"
       categories: "AVAILABLE_FOR_SALE"    
   customize:
     billofmaterial: "false"
