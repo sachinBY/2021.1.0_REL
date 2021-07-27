@@ -136,7 +136,8 @@ bydm:
       message: "BYDM"
   projordersummarydetail:
     out:
-      message: "BYDM"
+      #message: "BYDM"
+      message: "csv"
   projordersummary:
     out:
       message: "BYDM"    
