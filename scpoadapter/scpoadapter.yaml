@@ -173,8 +173,8 @@ bydm:
       message: "csv"
   sku:
     out:
-      #message: "BYDM"
-      message: "csv"
+      message: "BYDM"
+      #message: "csv"
   hist:
     aggregation:
       enabled: "false"          
