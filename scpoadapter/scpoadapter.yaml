@@ -161,12 +161,12 @@ bydm:
       message: "csv"
   projordertotal:
     out:
-      #message: "BYDM"
-      message: "csv"
+      message: "BYDM"
+      #message: "csv"
   ordersku:
     out:
-      #message: "bydm"
-      message: "csv"
+      message: "bydm"
+      #message: "csv"
   skustatstatic:
     out:
       #message: "BYDM"
