@@ -4,8 +4,8 @@ ack:
     sender: SCPO.GLOBAL
   generator: SCPO-A  
   received:
-    enabled: "false"
+    enabled: "true"
   error:
-    enabled: "false"
+    enabled: "true"
   sent:
     enabled: "false"  
