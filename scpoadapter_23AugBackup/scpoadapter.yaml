@@ -71,13 +71,7 @@ bydm:
       messageType: "itemLocationStatistics"
     dfutoskufcstwide:
       receiver: "HOST.GLOBAL"
-      messageType: "forecast2"
-    depdmdstatic:
-      receiver: "HOST.GLOBAL"
-      messageType: "dependentDemand"
-    fcstorder:
-      receiver: "HOST.GLOBAL"
-      messageType: "NettedForecast2"     
+      messageType: "forecast2"   
     typeversion: "3.2"
     message: "GS1"
     scope:
@@ -106,10 +100,7 @@ bydm:
         identifier: BYDM 2021.3.0
       skustatstatic:
         identifier: BYDM 2021.4.0
-      depdmdstatic:
-        identifier: BYDM 2021.5.0
-      fcstorder:
-        identifier: BYDM 2021.4.0
+
   enable:
     validation: "true"      
   message:
@@ -178,12 +169,6 @@ bydm:
     periods: "52"
     out:
       message: "bydm"
-  recship:
-    out:
-      message: "bydm"
-  fcstorder:
-    out:
-      message: "bydm"    
   hist:
     aggregation:
       enabled: "true"          
@@ -237,8 +222,6 @@ bydm:
     recship: "false"
     dfumovingeventmap: "false"
     out:
-      depdmdstatic: "false"
-      fcstorder: "false"
       vehicleloadline: "false"
       sku: "false"
       item: "false"

@@ -1,5 +1,5 @@
 eframework:
-  applicationId: connect-scpo-adapter
+  applicationId: jda-scpo-adapter
   errorReport:
     enabled: "true"
     errorReportPath: C:/scpo-2020.1.0/errorReports

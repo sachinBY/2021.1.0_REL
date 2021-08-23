@@ -42,6 +42,8 @@
 		<code key="CMT" value="Centimeter" />
 		<code key="CMQ" value="Cubic Centimeter" />
 		<code key="P1" value="Percent" />
+		<code key="GLE2" value="Gallon2" />
+		<code key="GLE3" value="Gallon3" />
 	</code-map>
 	<code-map name="UOMConversion" bi-directional="true">
 		<code key="PCE" value="10080" />
@@ -85,6 +87,8 @@
 		<code key="Centimeter" value="20" />
 		<code key="Cubic Centimeter" value="40" />
 		<code key="Percent" value="59" />
+		<code key="Gallon2" value="10070" />
+		
 	</code-map>
 	<code-map name="hierarchyLevelConversion" bi-directional="true">
 		<code key="1" value="Item" />
@@ -136,9 +140,11 @@
 		<code key="AREA" value="50" />
 		<code key="LAYER CATEGORY" value="2004" />
 		<code key="PACK CATEGORY" value="2003" />
+		<code key="VOLUME1" value="71" />
 	</code-map>
 	<code-map name="uomToCategoryTypeConversion" bi-directional="true">
 		<code key="20003" value="2003" />
+		<code key="3001" value="10" />
 		<code key="20004" value="2004" />
 		<code key="0" value="-1" />
 		<code key="1" value="50" />
