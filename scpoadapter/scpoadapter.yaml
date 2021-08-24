@@ -77,7 +77,7 @@ bydm:
       messageType: "dependentDemand"
     fcstorder:
       receiver: "HOST.GLOBAL"
-      messageType: "NettedForecast2"     
+      messageType: "nettedForecast2"     
     typeversion: "3.2"
     message: "GS1"
     scope:
