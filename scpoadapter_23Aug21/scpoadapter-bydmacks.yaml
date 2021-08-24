@@ -1,0 +1,11 @@
+ack:
+  sbdh:
+    receiver: HOST.GLOBAL
+    sender: SCPO.GLOBAL
+  generator: SCPO-A  
+  received:
+    enabled: "false"
+  error:
+    enabled: "false"
+  sent:
+    enabled: "false"  

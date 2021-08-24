@@ -97,7 +97,7 @@ bydm:
       skuhist:
         identifier: BYDM 2021.2.0
       fcst:
-        identifier: BYDM 2021.2.0
+        identifier: BYDM 2021.5.0
       orderlink:
         identifier: BYDM 2021.2.0
       sku:
@@ -114,7 +114,6 @@ bydm:
         identifier: BYDM 2021.3.0
       dfutoskufcst:
         identifier: BYDM 2021.2.0
-            
   enable:
     validation: "true"      
   message:
