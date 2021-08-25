@@ -119,7 +119,7 @@ bydm:
   enable:
     validation: "true"      
   message:
-    size: "100"     
+    size: "100000"     
   network:
     default:
       transmode: " "
