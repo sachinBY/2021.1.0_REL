@@ -179,7 +179,7 @@ bydm:
       message: "csv"
   skustatstatic:
     out:
-      message: "csv"
+      message: "bydm"
   dfutoskufcstwide:
     periods: "52"
     out:
