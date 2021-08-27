@@ -189,7 +189,7 @@ bydm:
       message: "csv"
   fcstorder:
     out:
-      message: "bydm"    
+      message: "csv"    
   hist:
     aggregation:
       enabled: "true"          
