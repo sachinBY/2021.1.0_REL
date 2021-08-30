@@ -139,57 +139,57 @@ bydm:
     message: "forecast2Message"
     messageType: "forecast2"
     out:
-      message: "bydm"    
+      message: "csv"    
   dfutoskufcst:
     preprocessing: "true"
     message: "forecast2Message"
     out:
-      message: "bydm"    
+      message: "csv"    
   skuhist:
     message: "demandHistoryMessage"
     out:
       message: "bydm"
   projorderexception:
     out:
-      message: "bydm"
+      message: "csv"
   projordersummarydetail:
     out:
-      message: "bydm"
+      message: "csv"
   projordersummary:
     out:
-      message: "bydm "    
+      message: "csv "    
   projorderskudetail:
     currencyCode: "USD"
     out:
-      message: "bydm"
+      message: "csv"
   projorderskutotal:
     out:
-      message: "bydm"    
+      message: "csv"    
   projordersku:
     out:
-      message: "bydm"    
+      message: "csv"    
   projordertotal:
     out:
-      message: "bydm"
+      message: "csv"
   ordersku:
     out:
-      message: "bydm"
+      message: "csv"
   sku:
     out:
-      message: "bydm"
+      message: "csv"
   skustatstatic:
     out:
-      message: "bydm"
+      message: "csv"
   dfutoskufcstwide:
     periods: "52"
     out:
-      message: "bydm"
+      message: "csv"
   recship:
     out:
-      message: "bydm"
+      message: "csv"
   fcstorder:
     out:
-      message: "bydm"    
+      message: "csv"    
   hist:
     aggregation:
       enabled: "true"          
