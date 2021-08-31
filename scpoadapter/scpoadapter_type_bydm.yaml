@@ -1,0 +1,348 @@
+bydm:
+  sbdh:
+    headerversion: "1.0"
+    sender: SCPO.GLOBAL
+    receiver: HOST.GLOBAL
+    fcst:
+      receiver: "HOST.GLOBAL"
+      messageType: "forecast2"
+    dfutoskufcst:
+      receiver: "HOST.GLOBAL"
+      messageType: "forecast2"
+    orderlink:
+      receiver: "HOST.GLOBAL"
+      messageType: "supplyDemandLink"
+    planarriv:
+      receiver: "HOST.GLOBAL"
+      messageType: "plannedSupply"
+    planorder:
+      receiver: "HOST.GLOBAL"
+      messageType: "plannedSupply" 
+    planpurch:
+      receiver: "HOST.GLOBAL"
+      messageType: "plannedSupply" 
+    recship:
+      receiver: "HOST.GLOBAL"
+      messageType: "plannedSupply" 
+    vehicleloadline:
+      receiver: "HOST.GLOBAL"
+      messageType: "plannedSupply" 
+    sku:
+      receiver: "HOST.GLOBAL"
+      messageType: "itemLocation" 
+    skuhist:
+      receiver: "HOST.GLOBAL"
+      messageType: "demandHistory"
+    item:
+      receiver: "LCT.GLOBAL"
+      messageType: "item"
+    orderskudetail:
+      receiver: "HOST.GLOBAL"
+      messageType: "recommendedPurchaseOrder"
+    skuprojstatic:
+      receiver: "HOST.GLOBAL"
+      messageType: "itemLocationProjection"
+    projordersku:
+      receiver: "HOST.GLOBAL"
+      messageType: "recommendedPurchaseOrder"
+    projorderskudetail:
+      receiver: "HOST.GLOBAL"
+      messageType: "recommendedPurchaseOrder"
+    projordertotal:
+      receiver: "HOST.GLOBAL"
+      messageType: "recommendedPurchaseOrder"
+    projorderskutotal:
+      receiver: "HOST.GLOBAL"
+      messageType: "recommendedPurchaseOrder"
+    projordersummary:
+      receiver: "HOST.GLOBAL"
+      messageType: "recommendedPurchaseOrder"
+    projordersummarydetail:
+      receiver: "HOST.GLOBAL"
+      messageType: "recommendedPurchaseOrder"
+    projorderexception:
+      receiver: "HOST.GLOBAL"
+      messageType: "recommendedPurchaseOrderException"
+    ordersku:
+      receiver: "HOST.GLOBAL"
+      messageType: "recommendedPurchaseOrder"
+    skueffinventoryparam:
+      receiver: "LCT.GLOBAL"
+      messageType: "itemLocationEffectiveInventoryParameters"
+    skustatstatic:
+      receiver: "HOST.GLOBAL"
+      messageType: "itemLocationStatistics"
+    dfutoskufcstwide:
+      receiver: "HOST.GLOBAL"
+      messageType: "forecast2"
+    depdmdstatic:
+      receiver: "HOST.GLOBAL"
+      messageType: "dependentDemand"
+    inventory:
+      receiver: "LCT.GLOBAL"
+      messageType: "inventoryOnHand2"
+    fcstorder:
+      receiver: "HOST.GLOBAL"
+      messageType: "nettedForecast2"     
+    typeversion: "3.2"
+    message: "GS1"
+    scope:
+      orderskudetail:
+        identifier: BYDM 2021.3.0
+      recommendedpurchorderexception:
+        identifier: BYDM 2021.3.0
+      recommendedpurchorder:
+        identifier: BYDM 2021.3.0
+      recommendedpurchaseorderexception:
+        identifier: BYDM 2021.3.0
+      plannedsupply:
+        identifier: BYDM 2021.2.0
+      skuprojstatic:
+        identifier: BYDM 2021.2.0    
+      identifier: BYDM 2020.3.0    
+      skuhist:
+        identifier: BYDM 2021.2.0
+      fcst:
+        identifier: BYDM 2021.2.0
+      orderlink:
+        identifier: BYDM 2021.2.0
+      sku:
+        identifier: BYDM 2021.2.0
+      ordersku:
+        identifier: BYDM 2021.3.0
+      skustatstatic:
+        identifier: BYDM 2021.4.0
+      depdmdstatic:
+        identifier: BYDM 2021.5.0
+      fcstorder:
+        identifier: BYDM 2021.5.0
+      item:
+        identifier: BYDM 2021.3.0
+      dfutoskufcst:
+        identifier: BYDM 2021.2.0
+      skueffinventoryparam:
+        identifier: BYDM 2021.5.0
+      inventory:
+        identifier: BYDM 2021.5.0
+            
+  enable:
+    validation: "true"      
+  message:
+    size: "100"     
+  network:
+    default:
+      transmode: " "
+      uom: "EA"
+      sourceuom: "EA"
+      targetuom: "EA"
+  automatic:
+    uomconversion: "false"
+  dmdunit:
+    ancestry:
+      hierarchies: "CAT,SUBCAT"
+    process:
+      ancestry: "false"    
+  fcst:
+    in:
+      table: "skuexternalfcst"    
+    message: "forecast2Message"
+    messageType: "forecast2"
+    out:
+      message: "BYDM"    
+  dfutoskufcst:
+    preprocessing: "true"
+    message: "forecast2Message"
+    out:
+      message: "BYDM"    
+  skuhist:
+    message: "demandHistoryMessage"
+    out:
+      message: "BYDM"
+  projorderexception:
+    out:
+      message: "BYDM"
+  projordersummarydetail:
+    out:
+      message: "BYDM"
+  projordersummary:
+    out:
+      message: "BYDM"    
+  projorderskudetail:
+    currencyCode: "USD"
+    out:
+      message: "BYDM"
+  projorderskutotal:
+    out:
+      message: "BYDM"    
+  projordersku:
+    out:
+      message: "BYDM"    
+  projordertotal:
+    out:
+      message: "BYDM"
+  ordersku:
+    out:
+      message: "bydm"
+  sku:
+    out:
+      message: "bydm"
+  skustatstatic:
+    out:
+      message: "BYDM"
+  dfutoskufcstwide:
+    periods: "52"
+    out:
+      message: "bydm"
+  recship:
+    out:
+      message: "bydm"
+  fcstorder:
+    out:
+      message: "bydm"
+  skueffinventoryparam:
+    out:
+      message: "bydm"
+  hist:
+    aggregation:
+      enabled: "true"          
+  inventory:
+    out:
+      message: "bydm" 
+    aggregation:
+      enabled: "true"
+      categories: "AVAILABLE_FOR_SALE"    
+  customize:
+    billofmaterial: "false"
+    calendar: "false"
+    cust: "false"
+    custorder: "false"
+    dmdgroup: "false"
+    dmdunit: "false"
+    dyndepsrc: "false"
+    ihlm: "false"
+    dfuview: "false"
+    dfutoskufcst: "false"   
+    dfuprice: "false"
+    hist: "false"
+    histtransactual: "false"
+    inventory: "false"
+    item: "false"
+    loc: "false"
+    movingevent: "false"
+    network: "false"
+    purchorder: "false"
+    firmplanpurch: "false"
+    prepacksupply: "false"
+    productionmethod: "false"
+    promotion: "false"
+    purchmethod: "false"
+    resource: "false"
+    schedrcpts: "false"
+    sku: "false"
+    skudemandparam: "false"
+    skuexternalfcst: "false"
+    skuexternalfcst2: "false"
+    sourcing: "false"
+    uom: "false"
+    skuhist: "false"
+    fcsthist: "false"
+    relation: "false"
+    in:
+      vehicleloadline: "false"
+      planarriv: "false"
+    fcst: "false"
+    planarriv: "false"
+    planorder: "false"
+    planpurch: "false"
+    recship: "false"
+    dfumovingeventmap: "false"
+    out:
+      depdmdstatic: "false"
+      fcstorder: "false"
+      vehicleloadline: "false"
+      sku: "false"
+      item: "false"
+      orderlink: "false"
+      orderskudetail: "false"
+      skuprojstatic: "false"
+      projordersku: "false"
+      projorderskudetail: "false"
+      projordertotal: "false"
+      projorderskutotal: "false"
+      projordersummary: "false"
+      projordersummarydetail: "false"
+      projorderexception: "false"
+      ordersku: "false"
+      skustatstatic: "false"
+      dfutoskufcstwide: "false"
+      skueffinventoryparam: "false"
+      inventory: "false"
+    transmode: "false"
+    itemlocdmdgroupmap: "false" 
+    skustatstatic: "false" 
+                  
+##########################################################
+#
+#         bulk update properties   
+#
+##########################################################
+item:
+  bulkUpdate:
+    disabled: "false"
+loc:
+  bulkUpdate:
+    disabled: "false"
+sku:
+  bulkUpdate:
+    disabled: "false"
+purchorder:
+  bulkUpdate:
+    disabled: "false"
+inventory:
+  bulkUpdate:
+    disabled: "false"
+dmdunit:
+  bulkUpdate:
+    disabled: "false"
+dmdgroup:
+  bulkUpdate:
+    disabled: "false"
+dfuview:
+  bulkUpdate:
+    disabled: "false"
+cust:
+  bulkUpdate:
+    disabled: "false"
+schedrcpts:
+  bulkUpdate:
+    disabled: "false"
+dfuprice:
+  bulkUpdate:
+    disabled: "false"
+movingevent:
+  bulkUpdate:
+    disabled: "false"
+vehicleloadline:
+  bulkUpdate:
+    disabled: "false"
+planpurch:
+  bulkUpdate:
+    disabled: "false"
+custorder:
+  bulkUpdate:
+    disabled: "false"
+bom:
+  bulkUpdate:
+    disabled: "false"
+purchmethod:
+  bulkUpdate:
+    disabled: "false"
+productionmethod:
+  bulkUpdate:
+    disabled: "false"
+network:
+  bulkUpdate:
+    disabled: "false"
+cal:
+  bulkUpdate:
+    disabled: "false"
