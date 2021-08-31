@@ -66,9 +66,6 @@ bydm:
     ordersku:
       receiver: "HOST.GLOBAL"
       messageType: "recommendedPurchaseOrder"
-    skueffinventoryparam:
-      receiver: "LCT.GLOBAL"
-      messageType: "itemLocationEffectiveInventoryParameters"
     skustatstatic:
       receiver: "HOST.GLOBAL"
       messageType: "itemLocationStatistics"
@@ -78,9 +75,6 @@ bydm:
     depdmdstatic:
       receiver: "HOST.GLOBAL"
       messageType: "dependentDemand"
-    inventory:
-      receiver: "LCT.GLOBAL"
-      messageType: "inventoryOnHand2"
     fcstorder:
       receiver: "HOST.GLOBAL"
       messageType: "nettedForecast2"     
@@ -117,13 +111,10 @@ bydm:
       fcstorder:
         identifier: BYDM 2021.5.0
       item:
-        identifier: BYDM 2021.3.0
+        #identifier: BYDM 2021.3.0
+        identifier: BYDM 2021.5.0
       dfutoskufcst:
         identifier: BYDM 2021.2.0
-      skueffinventoryparam:
-        identifier: BYDM 2021.5.0
-      inventory:
-        identifier: BYDM 2021.5.0
             
   enable:
     validation: "true"      
@@ -148,38 +139,38 @@ bydm:
     message: "forecast2Message"
     messageType: "forecast2"
     out:
-      message: "BYDM"    
+      message: "bydm"    
   dfutoskufcst:
     preprocessing: "true"
     message: "forecast2Message"
     out:
-      message: "BYDM"    
+      message: "bydm"    
   skuhist:
     message: "demandHistoryMessage"
     out:
-      message: "BYDM"
+      message: "bydm"
   projorderexception:
     out:
-      message: "BYDM"
+      message: "bydm"
   projordersummarydetail:
     out:
-      message: "BYDM"
+      message: "bydm"
   projordersummary:
     out:
-      message: "BYDM"    
+      message: "bydm "    
   projorderskudetail:
     currencyCode: "USD"
     out:
-      message: "BYDM"
+      message: "bydm"
   projorderskutotal:
     out:
-      message: "BYDM"    
+      message: "bydm"    
   projordersku:
     out:
-      message: "BYDM"    
+      message: "bydm"    
   projordertotal:
     out:
-      message: "BYDM"
+      message: "bydm"
   ordersku:
     out:
       message: "bydm"
@@ -188,7 +179,7 @@ bydm:
       message: "bydm"
   skustatstatic:
     out:
-      message: "BYDM"
+      message: "bydm"
   dfutoskufcstwide:
     periods: "52"
     out:
@@ -198,16 +189,11 @@ bydm:
       message: "bydm"
   fcstorder:
     out:
-      message: "bydm"
-  skueffinventoryparam:
-    out:
-      message: "bydm"
+      message: "bydm"    
   hist:
     aggregation:
       enabled: "true"          
   inventory:
-    out:
-      message: "bydm" 
     aggregation:
       enabled: "true"
       categories: "AVAILABLE_FOR_SALE"    
@@ -275,8 +261,6 @@ bydm:
       ordersku: "false"
       skustatstatic: "false"
       dfutoskufcstwide: "false"
-      skueffinventoryparam: "false"
-      inventory: "false"
     transmode: "false"
     itemlocdmdgroupmap: "false" 
     skustatstatic: "false" 
