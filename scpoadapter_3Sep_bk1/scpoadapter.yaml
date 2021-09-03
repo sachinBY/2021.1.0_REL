@@ -78,9 +78,6 @@ bydm:
     depdmdstatic:
       receiver: "HOST.GLOBAL"
       messageType: "dependentDemand"
-    loc:
-      receiver: "LCT.GLOBAL"
-      messageType: "location"
     inventory:
       receiver: "LCT.GLOBAL"
       messageType: "inventoryOnHand2"
@@ -128,8 +125,6 @@ bydm:
       inventory:
         identifier: BYDM 2021.5.0
       vehicleloadline:
-        identifier: BYDM 2021.5.0
-      loc:
         identifier: BYDM 2021.5.0
             
   enable:
@@ -268,7 +263,6 @@ bydm:
     dfumovingeventmap: "false"
     out:
       depdmdstatic: "false"
-      loc: "false"
       fcstorder: "false"
       vehicleloadline: "false"
       sku: "false"
