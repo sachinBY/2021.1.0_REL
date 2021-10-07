@@ -81,5 +81,4 @@ bydm:
       transmode: "TRANSMODE"
       transmodecap: "TRANSMODECAP"
       itemlocdmdgroupmap: "ITEMLOCDMDGROUPMAP"
-      dyndepsrc: "DYNDEPSRC"
-      retailplan2: "UDT_EP_FORECAST"   
+      dyndepsrc: "DYNDEPSRC"  
