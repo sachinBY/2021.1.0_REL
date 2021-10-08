@@ -18,7 +18,7 @@
 
 <entity-map-configuration>
 <entity-map scpoEntityName="retailplan2">
-		<table name="UDT_EP_FORECAST">
+		<table name="udt_ep_forecase">
     	 	<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
     		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
     		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
